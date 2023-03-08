@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: AppHome(),
     );
   }
@@ -21,6 +22,7 @@ class AppHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
           title: const Text("Gizer Inc."),
           leading: const Icon(Icons.ondemand_video)),
@@ -36,16 +38,16 @@ class AppHome extends StatelessWidget {
             const Text("Est. 1997"),
             ElevatedButton(
               onPressed: () {},
-              child: const Text("E button"),
+              child: const Text("Elevated button"),
             ),
             OutlinedButton(
               onPressed: () {},
-              child: const Text("O button"),
+              child: const Text("Outlined button"),
             ),
             const Padding(
               padding: EdgeInsets.all(20.0),
               child: Image(
-                image: AssetImage("1978127.jpg"),
+                image: AssetImage("assets/images/1978127.jpg"),
               ),
             ),
           ],
