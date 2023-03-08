@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gizer_inc/src/utils/themes/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,9 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AppHome(),
+      theme: TAppTheme.lightTheme,
+      darkTheme: TAppTheme.darkTheme,
+      themeMode: ThemeMode.light,
+      home: const AppHome(),
     );
   }
 }
@@ -33,9 +37,18 @@ class AppHome extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            const Text("Gizer's Resturant"),
-            const Text("Menu"),
-            const Text("Est. 1997"),
+            Text(
+              "Gizer's Resturant",
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
+            Text("Comm. 3", style: Theme.of(context).textTheme.headlineMedium),
+            const SizedBox(
+              height: 5.0,
+            ),
+            Text("Est. 1997 ™", style: Theme.of(context).textTheme.bodySmall),
+            const SizedBox(
+              height: 40.0,
+            ),
             ElevatedButton(
               onPressed: () {},
               child: const Text("Elevated button"),
