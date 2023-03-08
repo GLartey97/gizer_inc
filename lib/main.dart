@@ -27,8 +27,29 @@ class AppHome extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
           child: const Icon(Icons.add_shopping_cart_outlined),
           onPressed: () {}),
-      body: const Padding(
-        padding: EdgeInsets.all(20.0),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: ListView(
+          children: [
+            const Text("Gizer's Resturant"),
+            const Text("Menu"),
+            const Text("Est. 1997"),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("E button"),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: const Text("O button"),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Image(
+                image: AssetImage("1978127.jpg"),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
