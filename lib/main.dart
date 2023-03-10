@@ -26,7 +26,6 @@ class AppHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
           title: const Text("Gizer Inc."),
           leading: const Icon(Icons.ondemand_video)),
@@ -60,7 +59,7 @@ class AppHome extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.all(20.0),
               child: Image(
-                image: AssetImage("assets/images/1978127.jpg"),
+                image: AssetImage("assets/images/chef.png"),
               ),
             ),
           ],

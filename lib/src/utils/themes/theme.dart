@@ -5,7 +5,7 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
       brightness: Brightness.light,
       textTheme: TTextTheme.lightTextTheme,
-      primarySwatch: Colors.orange);
+      primarySwatch: Colors.amber);
   static ThemeData darkTheme = ThemeData(
       brightness: Brightness.dark, textTheme: TTextTheme.darkTextTheme);
 }
