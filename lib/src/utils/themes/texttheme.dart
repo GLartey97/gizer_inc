@@ -10,7 +10,7 @@ class TTextTheme {
     ),
     headlineMedium: GoogleFonts.poppins(
       color: Colors.black54,
-      fontSize: 32.0,
+      fontSize: 24.0,
     ),
     bodySmall: const TextStyle(color: Colors.black87),
   );
@@ -22,7 +22,7 @@ class TTextTheme {
     ),
     headlineMedium: GoogleFonts.poppins(
       color: Colors.white70,
-      fontSize: 32.0,
+      fontSize: 24.0,
     ),
     bodySmall: const TextStyle(color: Colors.white),
   );
